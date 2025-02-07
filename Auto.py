@@ -315,7 +315,7 @@ def procesar_linea_factura(driver, datos, tiempo_espera):
                         #Damos clic en guardar archivo de la ventana emergente
                         guardar_boton = driver.find_element(By.ID, "submitter")
                         guardar_boton.click()
-                        time.sleep(2.2)
+                        time.sleep(2.4)
                         #Tratamos la alerta en caso de que subamos un archivo repetido
                         if len(driver.window_handles) > 1:  # Verifica si hay más de una ventana
                             try:
@@ -384,7 +384,7 @@ def procesar_linea_factura(driver, datos, tiempo_espera):
                     action.send_keys(args.selected_cliente).perform()
                     time.sleep(t+1.2) 
                     action.send_keys(Keys.TAB).perform()
-                    time.sleep(t+0.2)
+                    time.sleep(t+0.6)
                     if args.selected_cliente != "":
                         action.send_keys(Keys.TAB).perform()
                         time.sleep(t+0.2)
