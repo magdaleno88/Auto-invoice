@@ -1,3 +1,4 @@
+from pathlib import Path
 import sys
 import json
 import os
@@ -20,7 +21,7 @@ class ModernInterface(QMainWindow):
         self.setWindowTitle("Contemplación - SMH")
 
         # Cambiar el ícono de la ventana (asegúrate de tener un archivo 'logo.png')
-        self.setWindowIcon(QIcon("Logo.jpeg"))
+        self.setWindowIcon(QIcon("img/Logo.jpeg"))
 
         self.setGeometry(300, 100, 800, 600)
 
@@ -48,7 +49,7 @@ class ModernInterface(QMainWindow):
         image_label = QLabel()
 
         # Cargar la imagen con QPixmap
-        pixmap = QPixmap("smh.png")  # Asegúrate de que la ruta sea correcta
+        pixmap = QPixmap("img/smh.png")  # Asegúrate de que la ruta sea correcta
 
         # Establecer la imagen en el QLabel
         image_label.setPixmap(pixmap)
@@ -332,9 +333,12 @@ class ModernInterface(QMainWindow):
 
     def select_folder(self):
         """Abre un diálogo para seleccionar una carpeta y muestra su contenido."""
-        self.folder_path = QFileDialog.getExistingDirectory(self, "Select Folder")
-        if self.folder_path:
+        folder = QFileDialog.getExistingDirectory(self, "Select Folder")
+        if folder:
+            # Convertir a ruta absoluta y normalizada usando pathlib
+            self.folder_path = str(Path(folder).resolve())
             self.folder_label.setText(f"Selected Folder: {self.folder_path}")
+            print(f"Folder selected: {self.folder_path}")
             
 
   

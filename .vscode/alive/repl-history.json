@@ -1,1 +1,1 @@
-[{"pkgName":"alive/debugger","text":"(+ 2 (* 2 2))"}]
+[{"pkgName":"cl-user","text":"pip install requests playsound"},{"pkgName":"alive/debugger","text":"(+ 2 (* 2 2))"}]

@@ -15,9 +15,12 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 import sys
 import argparse
+import pyperclip
+import pyautogui
 
 
 # Recibimos los datos de la interface
+print("Inicia auto")
 parser = argparse.ArgumentParser()
 
 parser.add_argument("option1", type=str, help="Departamento")
@@ -207,7 +210,7 @@ def procesar_linea_factura(driver, datos, tiempo_espera):
                 case 3:
                     #-----Solicitud de viaticos-----
                     print("Ejecutando acción para la opción 3")
-                    time.sleep(t)
+                    time.sleep(t+0.5)
                     action.send_keys(args.selected_text2).perform()
                     time.sleep(t)
                     action.send_keys(Keys.TAB).perform()
@@ -350,10 +353,10 @@ def procesar_linea_factura(driver, datos, tiempo_espera):
                 case 14:
                     #-----Nota-----
                     print("Ejecutando acción para la opción 14")
-                    time.sleep(t)
+                    time.sleep(t+0.4)
                     if datos['nombre']:
                         action.send_keys(datos['nombre']).perform()
-                    time.sleep(t)
+                    time.sleep(t+0.4)
                     action.send_keys(Keys.TAB).perform()
                 case 15:
                     #-----Departamento-----
@@ -398,41 +401,44 @@ def procesar_linea_factura(driver, datos, tiempo_espera):
                 case 20:
                     #-----Tarjeta corporativa-----
                     print("Ejecutando acción para la opción 20")
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 21:
                     #-----Proveedor-----
                     print("Ejecutando acción para la opción 21")
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 22:
                     #-----Tipo de operacion-----
                     print("Ejecutando acción para la opción 22")
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 23:
                     #-----Proveedor sustituto-----
                     print("Ejecutando acción para la opción 23")
-                    time.sleep(t)
-                    action.send_keys(datos['nombre_emisor']).perform()
-                    time.sleep(t)
+                    time.sleep(t+0.1)
+                    valor_emisor = datos['nombre_emisor'].replace('\t', 'ñ')
+                    pyperclip.copy(valor_emisor)  # Copiamos el texto (con ñ incluida) al portapapeles
+                    time.sleep(0.2)
+                    pyautogui.hotkey('ctrl', 'v')  # Pegamos el texto usando Ctrl + V
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 24:
                     #-----LD asociado-----
                     print("Ejecutando acción para la opción 24")
-                    time.sleep(t)
+                    time.sleep(t+0.2)
                     action.send_keys(Keys.TAB).perform()
                 case 25:
                     #-----Corporate card-----
                     print("Ejecutando acción para la opción 25")
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 26:
                     #-----Folio fiscal-----
                     print("Ejecutando acción para la opción 26")
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(datos['uuid']).perform()
-                    time.sleep(t)
+                    time.sleep(t+0.1)
                     action.send_keys(Keys.TAB).perform()
                 case 27:
                     #-----Fecha de emision UIID-----

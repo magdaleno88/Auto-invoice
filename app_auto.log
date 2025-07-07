@@ -1,0 +1,171 @@
+2025-03-28 15:09:40,043 - INFO - interface2 - Aplicación iniciada.
+2025-03-28 15:09:40,130 - INFO - interface2 - Inicializando interfaz...
+2025-03-28 15:09:40,160 - INFO - interface2 - Archivo de usuario no encontrado (user_settings.json), buscando defaults.
+2025-03-28 15:09:40,160 - INFO - interface2 - Cargando configuración desde: c:\Users\oagui\Desktop\python\settings.json
+2025-03-28 15:09:41,892 - INFO - interface2 - Interfaz inicializada.
+2025-03-28 15:10:34,121 - INFO - interface2 - Aplicación iniciada.
+2025-03-28 15:10:34,137 - INFO - interface2 - Inicializando interfaz...
+2025-03-28 15:10:34,172 - INFO - interface2 - Archivo de usuario no encontrado (user_settings.json), buscando defaults.
+2025-03-28 15:10:34,172 - INFO - interface2 - Cargando configuración desde: c:\Users\oagui\Desktop\python\settings.json
+2025-03-28 15:10:34,627 - INFO - interface2 - Interfaz inicializada.
+2025-03-28 15:10:41,888 - INFO - interface2 - Botón 'Start' presionado.
+2025-03-28 15:11:08,023 - INFO - interface2 - Aplicación iniciada.
+2025-03-28 15:11:08,039 - INFO - interface2 - Inicializando interfaz...
+2025-03-28 15:11:08,068 - INFO - interface2 - Archivo de usuario no encontrado (user_settings.json), buscando defaults.
+2025-03-28 15:11:08,068 - INFO - interface2 - Cargando configuración desde: c:\Users\oagui\Desktop\python\settings.json
+2025-03-28 15:11:08,556 - INFO - interface2 - Interfaz inicializada.
+2025-03-28 15:11:09,996 - INFO - interface2 - Botón 'Start' presionado.
+2025-03-28 15:11:10,000 - INFO - interface2 - Datos recolectados para Auto.py: {'email': 'jmagdaleno@smh.com.mx', 'password': 'Cosmere1234', 'department': 'SERVICIO TECNICO : OPERACIONES MONTERREY', 'class': 'SERVICIO TECNICO : DENSITOMETRIA', 'request': '', 'start_date': '2025-03-27', 'end_date': '2025-03-27', 'caso': '', 'cliente': '', 'folder': 'C:\\Users\\oagui\\Desktop\\facturas\\54 - Viaje saltillo 27-03-2025'}
+2025-03-28 15:11:10,000 - INFO - interface2 - Guardando configuración en: user_settings.json
+2025-03-28 15:11:10,003 - INFO - interface2 - Ejecutando Auto.run_automation...
+2025-03-28 15:11:10,003 - ERROR - interface2 - Error al ejecutar Auto.run_automation: name 'Auto' is not defined
+Traceback (most recent call last):
+  File "c:\Users\oagui\Desktop\python\interface2.py", line 440, in on_start_click
+    result = Auto.run_automation(
+             ^^^^
+NameError: name 'Auto' is not defined. Did you mean: 'Auto2'?
+2025-03-28 15:11:17,042 - INFO - interface2 - Botón 'Start' presionado.
+2025-03-28 15:11:17,042 - INFO - interface2 - Datos recolectados para Auto.py: {'email': 'jmagdaleno@smh.com.mx', 'password': 'Cosmere1234', 'department': 'SERVICIO TECNICO : OPERACIONES MONTERREY', 'class': 'SERVICIO TECNICO : DENSITOMETRIA', 'request': '', 'start_date': '2025-03-27', 'end_date': '2025-03-27', 'caso': '', 'cliente': '', 'folder': 'C:\\Users\\oagui\\Desktop\\facturas\\54 - Viaje saltillo 27-03-2025'}
+2025-03-28 15:11:17,042 - INFO - interface2 - Guardando configuración en: user_settings.json
+2025-03-28 15:11:17,042 - INFO - interface2 - Ejecutando Auto.run_automation...
+2025-03-28 15:11:17,042 - ERROR - interface2 - Error al ejecutar Auto.run_automation: name 'Auto' is not defined
+Traceback (most recent call last):
+  File "c:\Users\oagui\Desktop\python\interface2.py", line 440, in on_start_click
+    result = Auto.run_automation(
+             ^^^^
+NameError: name 'Auto' is not defined. Did you mean: 'Auto2'?
+2025-03-28 15:11:23,579 - INFO - interface2 - Cerrando aplicación.
+2025-03-28 15:12:29,338 - INFO - interface2 - Aplicación iniciada.
+2025-03-28 15:12:29,354 - INFO - interface2 - Inicializando interfaz...
+2025-03-28 15:12:29,389 - INFO - interface2 - Cargando configuración desde: user_settings.json
+2025-03-28 15:12:30,159 - INFO - interface2 - Interfaz inicializada.
+2025-03-28 15:12:31,552 - INFO - interface2 - Botón 'Start' presionado.
+2025-03-28 15:12:31,552 - INFO - interface2 - Datos recolectados para Auto.py: {'email': 'jmagdaleno@smh.com.mx', 'password': 'Cosmere1234', 'department': 'SERVICIO TECNICO : OPERACIONES MONTERREY', 'class': 'SERVICIO TECNICO : DENSITOMETRIA', 'request': '', 'start_date': '2025-03-27', 'end_date': '2025-03-27', 'caso': '', 'cliente': '', 'folder': 'C:\\Users\\oagui\\Desktop\\facturas\\54 - Viaje saltillo 27-03-2025'}
+2025-03-28 15:12:31,552 - INFO - interface2 - Guardando configuración en: user_settings.json
+2025-03-28 15:12:31,552 - INFO - interface2 - Ejecutando Auto.run_automation...
+2025-03-28 15:12:31,552 - INFO - Auto2 - ==================================================
+2025-03-28 15:12:31,552 - INFO - Auto2 - INICIANDO PROCESO DE AUTOMATIZACIÓN DE GASTOS
+2025-03-28 15:12:31,552 - INFO - Auto2 - Parámetros recibidos: Dept='SERVICIO TECNICO : OPERACIONES MONTERREY', Clase='SERVICIO TECNICO : DENSITOMETRIA', Folder='C:\Users\oagui\Desktop\facturas\54 - Viaje saltillo 27-03-2025'
+2025-03-28 15:12:31,569 - INFO - Auto2 - Iniciando WebDriver con webdriver-manager...
+2025-03-28 15:12:31,572 - INFO - logger - ====== WebDriver manager ======
+2025-03-28 15:12:33,475 - INFO - logger - Get LATEST chromedriver version for google-chrome
+2025-03-28 15:12:33,746 - INFO - logger - Get LATEST chromedriver version for google-chrome
+2025-03-28 15:12:33,923 - INFO - logger - There is no [win64] chromedriver "134.0.6998.165" for browser google-chrome "134.0.6998" in cache
+2025-03-28 15:12:33,939 - INFO - logger - Get LATEST chromedriver version for google-chrome
+2025-03-28 15:12:34,401 - INFO - logger - WebDriver version 134.0.6998.165 selected
+2025-03-28 15:12:34,401 - INFO - logger - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+2025-03-28 15:12:34,401 - INFO - logger - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+2025-03-28 15:12:34,677 - INFO - logger - Driver downloading response is 200
+2025-03-28 15:12:35,426 - INFO - logger - Get LATEST chromedriver version for google-chrome
+2025-03-28 15:12:35,759 - INFO - logger - Driver has been saved in cache [C:\Users\oagui\.wdm\drivers\chromedriver\win64\134.0.6998.165]
+2025-03-28 15:12:37,935 - INFO - Auto2 - WebDriver iniciado correctamente.
+2025-03-28 15:12:37,935 - INFO - Auto2 - Navegando a NetSuite...
+2025-03-28 15:12:39,216 - INFO - Auto2 - Realizando login...
+2025-03-28 15:12:42,042 - INFO - Auto2 - Credenciales enviadas.
+2025-03-28 15:12:59,552 - INFO - Auto2 - Login exitoso.
+2025-03-28 15:12:59,552 - INFO - Auto2 - Navegando a 'Introducir informes de gastos'...
+2025-03-28 15:13:02,457 - INFO - Auto2 - Página de informe de gastos cargada.
+2025-03-28 15:13:04,458 - INFO - Auto2 - Rellenando cabecera del informe...
+2025-03-28 15:13:06,170 - INFO - Auto2 - Cabecera rellenada.
+2025-03-28 15:13:07,171 - INFO - Auto2 - Buscando archivos XML en: C:\Users\oagui\Desktop\facturas\54 - Viaje saltillo 27-03-2025
+2025-03-28 15:13:07,171 - INFO - Auto2 - Archivos XML encontrados y ordenados: ['Linea 1 - Camion de monterrey a saltillo.xml', 'Linea 2 - Desayuno 27-03-2025.xml', 'Linea 3 - Comida 27-03-2025.xml', 'Linea 4 - Uber de oficina a central de autobuses monterrey 27-03-2025.xml', 'Linea 5 - Uber de central de autobuses saltillo a issste 27-03-2025.xml', 'Linea 6 - Uber de issste saltillo a central de autobuses saltillo 27-03-2025.xml', 'Linea 7 - Uber de central de autobuses monterrey 27-03-2025.xml']
+2025-03-28 15:13:07,171 - INFO - Auto2 - Procesando XML: Linea 1 - Camion de monterrey a saltillo.xml
+2025-03-28 15:13:07,171 - INFO - Auto2 - Datos extraídos de Linea 1 - Camion de monterrey a saltillo.xml: Subtotal=324.31, IVA=103.78, ISH=0.0
+2025-03-28 15:13:07,171 - INFO - Auto2 - Procesando línea para: Linea 1 - Camion de monterrey a saltillo
+2025-03-28 15:13:12,721 - INFO - Auto2 - Intentando adjuntar PDF: C:\Users\oagui\Desktop\facturas\54 - Viaje saltillo 27-03-2025\Linea 1 - Camion de monterrey a saltillo.pdf
+2025-03-28 15:13:25,842 - ERROR - Auto2 - Error con pywinauto al subir C:\Users\oagui\Desktop\facturas\54 - Viaje saltillo 27-03-2025\Linea 1 - Camion de monterrey a saltillo.pdf: {'title': 'Abrir', 'class_name': 'Button', 'top_level_only': False, 'parent': <win32_element_info.HwndElementInfo - 'Abrir', #32770, 1183012>, 'backend': 'win32'}
+Traceback (most recent call last):
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\application.py", line 250, in __resolve_control
+    ctrl = wait_until_passes(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\timings.py", line 458, in wait_until_passes
+    raise err
+pywinauto.timings.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\oagui\Desktop\python\Auto2.py", line 299, in procesar_linea_factura
+    abrir_button.click_input()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\application.py", line 379, in __getattribute__
+    ctrls = self.__resolve_control(self.criteria)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\application.py", line 261, in __resolve_control
+    raise e.original_exception
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\timings.py", line 436, in wait_until_passes
+    func_val = func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\application.py", line 222, in __get_ctrl
+    ctrl = self.backend.generic_wrapper_class(findwindows.find_element(**ctrl_criteria))
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\pywinauto\findwindows.py", line 87, in find_element
+    raise ElementNotFoundError(kwargs)
+pywinauto.findwindows.ElementNotFoundError: {'title': 'Abrir', 'class_name': 'Button', 'top_level_only': False, 'parent': <win32_element_info.HwndElementInfo - 'Abrir', #32770, 1183012>, 'backend': 'win32'}
+2025-03-28 15:13:36,527 - INFO - Auto2 - Línea agregada para: Linea 1 - Camion de monterrey a saltillo
+2025-03-28 15:13:39,030 - INFO - Auto2 - Procesando XML: Linea 2 - Desayuno 27-03-2025.xml
+2025-03-28 15:13:39,033 - INFO - Auto2 - Datos extraídos de Linea 2 - Desayuno 27-03-2025.xml: Subtotal=163.79, IVA=52.42, ISH=0.0
+2025-03-28 15:13:39,033 - INFO - Auto2 - Procesando línea para: Linea 2 - Desayuno 27-03-2025
+2025-03-28 15:13:39,203 - ERROR - Auto2 - Error procesando línea de factura para Linea 2 - Desayuno 27-03-2025: Alert Text: Advertencia Está intentando introducir un importe de impuesto para un gasto sin recibo.  ¿Desea continuar?
+Message: unexpected alert open: {Alert text : Advertencia Está intentando introducir un importe de impuesto para un gasto sin recibo.  ¿Desea continuar?}
+  (Session info: chrome=134.0.6998.166)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00FDFC23]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x7641FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774482AE+286]
+	RtlGetAppContainerNamedObjectPath [0x7744827E+238]
+Traceback (most recent call last):
+  File "c:\Users\oagui\Desktop\python\Auto2.py", line 205, in procesar_linea_factura
+    action.send_keys(Keys.TAB).perform()
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\oagui\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 228, in check_response
+    raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: Advertencia Está intentando introducir un importe de impuesto para un gasto sin recibo.  ¿Desea continuar?
+Message: unexpected alert open: {Alert text : Advertencia Está intentando introducir un importe de impuesto para un gasto sin recibo.  ¿Desea continuar?}
+  (Session info: chrome=134.0.6998.166)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00FDFC23]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x7641FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774482AE+286]
+	RtlGetAppContainerNamedObjectPath [0x7744827E+238]
+
+2025-03-28 15:13:39,223 - ERROR - Auto2 - Fallo al procesar la línea principal para Linea 2 - Desayuno 27-03-2025.xml. Abortando.
+2025-03-28 15:13:39,223 - INFO - Auto2 - Cerrando WebDriver...
+2025-03-28 15:13:41,484 - INFO - Auto2 - WebDriver cerrado.
+2025-03-28 15:13:41,484 - INFO - Auto2 - ==================================================
+2025-03-28 15:13:41,484 - INFO - interface2 - Ejecución de Auto.run_automation completada. Resultado: False
+2025-03-28 15:13:58,102 - INFO - interface2 - Cerrando aplicación.
