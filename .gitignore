@@ -1,0 +1,16 @@
+# Credenciales y configuración local
+settings.json
+user_settings.json
+.env
+.env.*
+!.env.example
+*.xml
+*.pdf
+
+# Salidas y archivos generados
+__pycache__/
+*.py[cod]
+*.log
+build/
+dist/
+.vscode/

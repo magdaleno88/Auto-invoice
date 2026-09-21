@@ -32,11 +32,11 @@ parser.add_argument("selected_caso", type=str, help="Primera opción de texto")
 parser.add_argument("selected_cliente", type=str, help="Primera opción de texto")
 parser.add_argument("selected_folder", type=str, help="Primera opción de texto")
 parser.add_argument("selected_email", type=str, help="Primera opción de texto")
-parser.add_argument("selected_password", type=str, help="Primera opción de texto")
 
 
 
 args = parser.parse_args()
+selected_password = sys.stdin.read()
 
 # Le damos el formato adecuado a las fechas que vienen de la interface
 fecha_objeto1 = datetime.strptime(args.date1, "%Y-%m-%d")
@@ -51,7 +51,6 @@ print(f"Date1: {fecha_inicio}")
 print(f"Date2: {fecha_fin}")
 print(f"ruta del folder: {args.selected_folder}")
 print(f"Email: {args.selected_email}")
-print(f"Contraseña: {args.selected_password}")
 print(f"caso: {args.selected_caso}")
 print(f"cliente: {args.selected_cliente}")
 
@@ -522,7 +521,7 @@ usuario = driver.find_element(By.NAME, 'email')  # Ajusta el selector según el 
 contrasena = driver.find_element(By.NAME, 'password')  # Ajusta el selector según el campo de contraseña
 
 usuario.send_keys(args.selected_email)  # Ingresa tu email
-contrasena.send_keys(args.selected_password)  # Ingresa tu contraseña
+contrasena.send_keys(selected_password)  # Ingresa tu contraseña
 contrasena.send_keys(Keys.RETURN)  # Presiona Enter para enviar el formulario
 
 

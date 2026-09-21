@@ -75,7 +75,7 @@ class ModernInterface(QMainWindow):
         self.text_password.setFont(font_input)
         self.text_password.setPlaceholderText("Contraseña")
         self.text_password.setEchoMode(QLineEdit.Password)
-        self.text_password.setText(self.saved_data.get("password", ""))
+        self.text_password.setText("")
         self.text_password.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         self.text_password.setMaximumWidth(330)
         self.text_password.setStyleSheet("""
@@ -368,7 +368,6 @@ class ModernInterface(QMainWindow):
 
         data_to_save = {
             "email": self.text_email["widget"].text(),
-            "password": self.text_password.text(),
             "department": self.selector1["widget"].currentText(),
             "class": self.selector2["widget"].currentText(),
             #"request": self.text_input2["widget"].text(),
@@ -395,8 +394,9 @@ class ModernInterface(QMainWindow):
                 selected_caso,
                 selected_cliente,
                 selected_folder,
-                selected_email, 
-                selected_password],
+                selected_email],
+                input=selected_password,
+                text=True,
                 check=True,
             )
             print("Script ejecutado correctamente.")
