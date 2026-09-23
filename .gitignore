@@ -5,6 +5,7 @@ user_settings.json
 .env.*
 !.env.example
 *.xml
+!examples/fictional_cfdi.xml
 *.pdf
 
 # Salidas y archivos generados

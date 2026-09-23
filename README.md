@@ -1,5 +1,7 @@
 # Auto-invoice
 
+[Caso de estudio / Case study](docs/CASE_STUDY.md) · [Entrada XML ficticia](examples/fictional_cfdi.xml) · [English summary](#english-summary)
+
 Aplicación de escritorio en Python para automatizar la carga de facturas en una plataforma interna. Combina una interfaz PyQt5 para reunir los datos de una solicitud con automatización de navegador mediante Selenium.
 
 ## Problema que aborda
@@ -30,3 +32,7 @@ No se publican métricas de ahorro de tiempo hasta contar con una comparación d
 ## Estado del proyecto
 
 El código se desarrolló para un proceso específico de una organización. La versión actual excluye del repositorio los archivos locales de configuración, registros y resultados generados. Las credenciales que estuvieron presentes en versiones anteriores deben cambiarse en el servicio correspondiente: retirarlas de la versión actual no las borra del historial de Git.
+
+## English summary
+
+Auto-invoice is a Python desktop application for an internal invoice submission workflow. A PyQt5 interface collects request details; Selenium enters them into the authorized platform. The code reads invoice XML and checks for a matching PDF. Read the [case study](docs/CASE_STUDY.md) and inspect a [fictional XML input](examples/fictional_cfdi.xml). The full workflow needs access to the internal platform; no performance claim is published.
